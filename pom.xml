@@ -63,7 +63,7 @@
         <maven.gpg.version>1.6</maven.gpg.version>
         <maven.jacoco.version>0.8.3</maven.jacoco.version>
         <maven.jar.version>3.1.0</maven.jar.version>
-        <maven.pmd.version>3.8</maven.pmd.version>
+        <maven.pmd.version>3.12.0</maven.pmd.version>
     </properties>
 
     <modules>
