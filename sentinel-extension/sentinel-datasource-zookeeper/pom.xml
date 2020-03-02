@@ -17,7 +17,7 @@
         <java.target.version>1.7</java.target.version>
         <zookeeper.version>3.4.13</zookeeper.version>
         <curator.version>4.0.1</curator.version>
-        <curator.test.version>2.12.0</curator.test.version>
+        <curator.test.version>4.3.0</curator.test.version>
     </properties>
 
     <dependencies>
