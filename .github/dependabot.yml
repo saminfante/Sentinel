@@ -1,0 +1,142 @@
+version: 2
+registries:
+  git-github-com:
+    type: git
+    url: https://github.com
+    username: saminfante
+    password: "${{secrets.GIT_GITHUB_COM_PASSWORD}}"
+
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:49"
+    timezone: US/Central
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: io.netty:netty-all
+    versions:
+    - 4.1.58.Final
+    - 4.1.58.Final
+    - 4.1.59.Final
+    - 4.1.60.Final
+    - 4.1.60.Final
+    - 4.1.61.Final
+    - 4.1.61.Final
+    - 4.1.62.Final
+  - dependency-name: io.lettuce:lettuce-core
+    versions:
+    - 6.0.2.RELEASE
+    - 6.0.3.RELEASE
+    - 6.1.0.RELEASE
+  - dependency-name: io.netty:netty-handler
+    versions:
+    - 4.1.58.Final
+    - 4.1.60.Final
+    - 4.1.61.Final
+  - dependency-name: io.grpc:grpc-stub
+    versions:
+    - 1.35.0
+    - 1.36.0
+    - 1.36.1
+  - dependency-name: io.grpc:grpc-protobuf
+    versions:
+    - 1.35.0
+    - 1.36.0
+    - 1.36.1
+  - dependency-name: io.grpc:grpc-netty
+    versions:
+    - 1.35.0
+    - 1.36.0
+    - 1.36.1
+  - dependency-name: com.alibaba.nacos:nacos-client
+    versions:
+    - 1.4.1
+    - 2.0.0
+  - dependency-name: org.springframework:spring-test
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-aop
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-context
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: org.springframework:spring-context-support
+    versions:
+    - 5.3.3
+    - 5.3.4
+    - 5.3.5
+  - dependency-name: io.projectreactor:reactor-test
+    versions:
+    - 3.4.2
+    - 3.4.3
+    - 3.4.4
+  - dependency-name: io.projectreactor:reactor-core
+    versions:
+    - 3.4.2
+    - 3.4.3
+    - 3.4.4
+  - dependency-name: org.openjdk.jmh:jmh-generator-annprocess
+    versions:
+    - "1.27"
+    - "1.28"
+  - dependency-name: org.openjdk.jmh:jmh-core
+    versions:
+    - "1.27"
+    - "1.28"
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.7.7
+    - 3.8.0
+  - dependency-name: org.apache.dubbo:dubbo
+    versions:
+    - 2.7.8
+    - 2.7.9
+  - dependency-name: org.springframework.boot:spring-boot-starter-logging
+    versions:
+    - 2.4.2
+  - dependency-name: org.springframework.boot:spring-boot-starter-test
+    versions:
+    - 2.4.1
+    - 2.4.2
+  - dependency-name: org.springframework.boot:spring-boot-starter-web
+    versions:
+    - 2.4.2
+  - dependency-name: org.springframework.boot:spring-boot-starter-webflux
+    versions:
+    - 2.4.0
+    - 2.4.1
+  - dependency-name: com.netflix.zuul:zuul-core
+    versions:
+    - 2.2.0
+  - dependency-name: org.springframework.boot:spring-boot-starter-data-redis-reactive
+    versions:
+    - 2.4.0
+  - dependency-name: org.apache.logging.log4j:log4j-slf4j-impl
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-api
+    versions:
+    - 2.14.0
+  - dependency-name: org.apache.logging.log4j:log4j-core
+    versions:
+    - 2.14.0
+  - dependency-name: com.alibaba:fastjson
+    versions:
+    - 1.2.75
+  - dependency-name: com.ctrip.framework.apollo:apollo-openapi
+    versions:
+    - 1.7.0
+  - dependency-name: com.ctrip.framework.apollo:apollo-client
+    versions:
+    - 1.7.0
+  registries:
+  - git-github-com
